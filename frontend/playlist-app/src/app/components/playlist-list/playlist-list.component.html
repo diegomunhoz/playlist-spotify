@@ -1,0 +1,9 @@
+<div>
+  <h2>Playlists</h2>
+  <button (click)="addPlaylist()">Nova Playlist</button>
+  <ul>
+    <li *ngFor="let playlist of playlists">
+      <a (click)="viewDetail(playlist.nombre)">{{ playlist.nombre }}</a> - {{ playlist.descripcion }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,8 @@
+<div>
+  <h2>Nova Playlist</h2>
+  <form (ngSubmit)="add()">
+    <input [(ngModel)]="nombre" name="nombre" placeholder="Nome" required />
+    <input [(ngModel)]="descripcion" name="descripcion" placeholder="Descrição" required />
+    <button type="submit">Salvar</button>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+<div *ngIf="playlist">
+  <h2>{{ playlist.nombre }}</h2>
+  <p>{{ playlist.descripcion }}</p>
+  <h3>Músicas</h3>
+  <ul>
+    <li *ngFor="let c of playlist.canciones">
+      {{ c.titulo }} - {{ c.artista }} ({{ c.genero }})
+    </li>
+  </ul>
+  <button (click)="deletePlaylist()">Remover Playlist</button>
+</div>
